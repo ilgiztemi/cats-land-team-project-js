@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
+.main {
+    width: 100%;
+    margin: 20px 0;
+    background-color: rgb(202, 228, 245);
+    height: 100%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.header h1 {
+    padding-top: 15px;
+    font-size: 40px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 700px;
+    padding-bottom: 10px;
+}
+.container .left-content, .middle-content, .right-content {
+    border: 1px solid silver;
+    height: 98%;
+    margin: 10px;
+}
+.container .left-content, .middle-content {
+    background-color: rgb(246, 235, 220);
+}
+.left-content {
+    overflow-y: scroll;
+}
+.middle-content {
+    overflow-y: scroll;
+}
+.left-content h4 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.left-content #list {
+    list-style: none;
+}
+.left-content ol li{
+    border: 1px solid silver;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    line-height: 22px;
+}
+.middle-content h4 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.middle-content ol li {
+    border: 1px solid silver;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    line-height: 22px;
+}
+.middle-content #added-list {
+    list-style: none;
+}
+.middle-content #added-list li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.middle-content #added-list li p {
+    flex-basis: 80%;
+}
+#added-list .fa-heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144, 140, 140);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+#added-list .fa-heart:hover {
+    background-color: rgb(117, 113, 113);
+}
+#added-list .fa-trash-can {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 88, 88);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+#added-list .fa-trash-can:hover {
+    background-color: rgb(235, 41, 41);
+}
+.right-content #input {
+    width: 90%;
+    line-height: 30px;
+    font-size: 17px;
+    margin: 0 5%;
+}
+.right-content #add-btn {
+    float: right;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgb(48, 170, 246);
+    color: beige;
+    border: 1px solid rgb(157, 200, 243);
+}
+.right-content #add-btn:hover {
+    background-color: rgb(15, 155, 242);
+}
